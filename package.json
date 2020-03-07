@@ -1,0 +1,27 @@
+{
+    "name": "serverless-react-frontend",
+    "version": "0.0.1",
+    "description": "A serverless React frontend with server-side rendering",
+    "dependencies": {
+        "isomorphic-unfetch": "3.0.0",
+        "next": "9.2.2",
+        "react": "16.13.0",
+        "react-dom": "16.13.0",
+        "serverless-next.js": "1.9.3"
+    },
+    "devDependencies": {
+        "jest": "25.1.0",
+        "storybook": "5.3.14",
+        "standard": "14.3.1"
+    },
+    "scripts": {
+        "test": "standard --fix && jest",
+        "prestart": "next build",
+        "start": "next start"
+    },
+    "author": {
+        "name": "Andrew Shaw Care",
+        "email": "andrewshawcare@gmail.com",
+        "url": "https://andrewshawcare.com"
+    }
+}

@@ -1,0 +1,9 @@
+# package directories
+node_modules/
+
+# Serverless directories
+.serverless/
+.serverless_nextjs
+
+# Next.js directories
+.next
