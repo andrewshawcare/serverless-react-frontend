@@ -1,5 +1,7 @@
+import React from 'react'
+
 export default ({
   name = 'world'
 } = {}) => {
-  return <h1>Hello, {name}!</h1>
+  return React.createElement('h1', { className: 'hello' }, `Hello, ${name}!`)
 }
