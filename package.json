@@ -1,37 +1,42 @@
 {
-    "name": "serverless-react-frontend",
-    "version": "0.0.1",
-    "description": "A serverless React frontend with server-side rendering",
-    "type": "module",
-    "dependencies": {
-        "isomorphic-unfetch": "3.0.0",
-        "next": "9.2.2",
-        "react": "16.13.0",
-        "react-dom": "16.13.0",
-        "serverless-next.js": "1.9.3"
-    },
-    "devDependencies": {
-        "assert": "2.0.0",
-        "mocha": "7.1.0",
-        "jsdom": "16.2.0",
-        "jsdom-global": "3.0.2",
-        "storybook": "5.3.14",
-        "standard": "14.3.1"
-    },
-    "scripts": {
-        "test": "standard --fix && mocha --require 'jsdom-global/register' '{,!(node_modules)/**}/test.js'",
-        "prestart": "next build",
-        "start": "next start"
-    },
-    "author": {
-        "name": "Andrew Shaw Care",
-        "email": "andrewshawcare@gmail.com",
-        "url": "https://andrewshawcare.com"
-    },
-    "standard": {
-        "env": [
-            "mocha",
-            "browser"
-        ]
-    }
+  "name": "serverless-react-frontend",
+  "version": "0.0.1",
+  "description": "A serverless React frontend with server-side rendering",
+  "dependencies": {
+    "isomorphic-unfetch": "3.0.0",
+    "next": "9.2.2",
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
+    "serverless-next.js": "1.9.3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.7",
+    "@storybook/react": "5.3.14",
+    "assert": "2.0.0",
+    "babel-loader": "8.0.6",
+    "esm": "3.2.25",
+    "jsdom": "16.2.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "7.1.0",
+    "standard": "14.3.1",
+    "storybook": "5.3.14"
+  },
+  "scripts": {
+    "test": "standard --fix && mocha --require 'esm' --require 'jsdom-global/register' '{,!(node_modules)/**}/tests.js'",
+    "prestart": "next build",
+    "start": "next start",
+    "prestyleguide": "build-storybook",
+    "styleguide": "start-storybook"
+  },
+  "author": {
+    "name": "Andrew Shaw Care",
+    "email": "andrewshawcare@gmail.com",
+    "url": "https://andrewshawcare.com"
+  },
+  "standard": {
+    "env": [
+      "mocha",
+      "browser"
+    ]
+  }
 }
