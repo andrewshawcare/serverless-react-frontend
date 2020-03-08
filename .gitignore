@@ -3,10 +3,13 @@ node_modules/
 
 # Serverless directories
 .serverless/
-.serverless_nextjs
+.serverless_nextjs/
 
 # Next.js directories
-.next
+.next/
 
 # Storybook directories
-storybook-static
+storybook-static/
+
+# IDEA directories
+.idea/

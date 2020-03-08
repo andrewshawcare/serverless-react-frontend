@@ -20,12 +20,12 @@
     "jsdom-global": "3.0.2",
     "mocha": "7.1.0",
     "nodemon": "2.0.2",
-    "standard": "14.3.1",
+    "prettier": "1.19.1",
     "storybook": "5.3.14"
   },
   "scripts": {
     "develop": "nodemon --watch './components' --exec 'npm test && npm run styleguide'",
-    "test": "standard --fix && mocha --require 'esm' --require 'jsdom-global/register' '{,!(node_modules)/**}/tests.js'",
+    "test": "prettier --write && mocha --require 'esm' --require 'jsdom-global/register' '{,!(node_modules)/**}/tests.js'",
     "prestart": "next build",
     "start": "next start",
     "prestyleguide": "build-storybook",
