@@ -1,10 +1,12 @@
+import { withKnobs, text } from '@storybook/addon-knobs'
 import HelloComponent from './index.js'
 
 export default {
+  title: 'Hello',
   component: HelloComponent,
-  title: 'Hello'
+  decorators: [withKnobs]
 }
 
 export const Default = () => {
-  return HelloComponent()
+  return HelloComponent({ name: text('Name', 'Andrew') })
 }

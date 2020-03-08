@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.8.7",
+    "@storybook/addon-knobs": "5.3.14",
     "@storybook/react": "5.3.14",
     "assert": "2.0.0",
     "babel-loader": "8.0.6",
@@ -18,15 +19,17 @@
     "jsdom": "16.2.0",
     "jsdom-global": "3.0.2",
     "mocha": "7.1.0",
+    "nodemon": "2.0.2",
     "standard": "14.3.1",
     "storybook": "5.3.14"
   },
   "scripts": {
+    "develop": "nodemon --watch './components' --exec 'npm test && npm run styleguide'",
     "test": "standard --fix && mocha --require 'esm' --require 'jsdom-global/register' '{,!(node_modules)/**}/tests.js'",
     "prestart": "next build",
     "start": "next start",
     "prestyleguide": "build-storybook",
-    "styleguide": "start-storybook"
+    "styleguide": "start-storybook --ci --port 8080"
   },
   "author": {
     "name": "Andrew Shaw Care",
