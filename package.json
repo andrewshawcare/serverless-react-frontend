@@ -19,7 +19,7 @@
     "jsdom": "16.2.0",
     "jsdom-global": "3.0.2",
     "mocha": "7.1.0",
-    "nodemon": "2.0.2",
+    "nodemon": "2.0.4",
     "prettier": "1.19.1",
     "storybook": "5.3.14"
   },
