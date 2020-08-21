@@ -10,7 +10,7 @@
     "serverless-next.js": "1.9.3"
   },
   "devDependencies": {
-    "@babel/core": "7.8.7",
+    "@babel/core": "7.11.4",
     "@storybook/addon-knobs": "5.3.14",
     "@storybook/react": "5.3.14",
     "assert": "2.0.0",
